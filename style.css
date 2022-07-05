@@ -1,19 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container{
     display: flex;
     background: gray;
     gap: 10px;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    flex-wrap: wrap;
 }
 
 .aside{
     padding: 25px;
-    width: 30%;
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-size: 30px;
+    background-color: #C3E7F1;
+    flex-grow: 1;
 }
 .elemento{
     height: 30%;
@@ -32,4 +39,42 @@
 
 .elemento3{
     background-color: #BFCDFA;
+}
+
+.section-principal{
+    background-color:#042AA4;
+    margin: 25px;
+    color: white;
+    text-align: center;
+    flex-grow: 2;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 640px) {
+    .container{
+        
+        flex-direction: column;
+    }
+
+    .aside{
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        flex-direction: row;
+        height: 85px;
+        margin: auto;
+    }
+
+    .elemento{
+        width: 30%;
+        font-size: 15px;
+        flex-grow: 0;
+        height: 40px;
+    }
+
+.section-principal{
+    flex-grow: 0;
+    height: 80vh;
+}
 }
