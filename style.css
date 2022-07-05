@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    background: gray;
+    gap: 10px;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.aside{
+    padding: 25px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 30px;
+}
+.elemento{
+    height: 30%;
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.elemento1{
+    background-color: #031D71;
+}
+
+.elemento2{
+    background-color: #5678E5;
+}
+
+.elemento3{
+    background-color: #BFCDFA;
+}
