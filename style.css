@@ -21,6 +21,7 @@
     font-size: 30px;
     background-color: #C3E7F1;
     flex-grow: 1;
+    margin: 25px;
 }
 .elemento{
     height: 30%;
@@ -60,16 +61,17 @@
     .aside{
         position: fixed;
         bottom: 10px;
-        width: 100%;
+        left: 8px;
+        width: 98%;
         flex-direction: row;
         height: 85px;
         margin: auto;
+        flex-grow: 0;
     }
 
     .elemento{
         width: 30%;
         font-size: 15px;
-        flex-grow: 0;
         height: 40px;
     }
 
